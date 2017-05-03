@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-// import logo from '../public/Zen-Bamboo-Staff-white.png'
+import logo from '../public/Zen-Bamboo-Staff-white.png'
 import './App.css'
-import { Link } from 'react-router'
+// import { Link } from 'react-router'
 
 // import ReactDOM from 'react-dom'
 // import { Router, Route, hashHistory } from 'react-router'
@@ -18,33 +18,38 @@ export default class App extends Component {
 //       <Match exactly pattern='/' component={Landing} />
 //     </div>
 //   </BrowserRouter>
-// ) 
+// )
+
+// {/* <div>
+//   <Link to="/">Home</Link>
+//   <Link to="/">Contact</Link>
+//   <Link to="/">NotFound</Link>
+//
+//   {this.props.children}
+// </div> */}
 
   render() {
     return (
       <div>
-        <p className="app-intro">
-          <em>Kensho</em> is a Japanese term from the Zen trandition meaning "seeing one's true nature; perceiving the Self"
+        <section className="hero">
+          <h1 className="title">Kensho Coaching</h1>
+          <h3 className="tagline">ancient and cutting-edge tools for modern times</h3>
+        </section>
 
-          <em>ken</em>seeing
-          <em>sho</em>nature, essence
-        </p>
-        <div>
-          <Link to="/">Home</Link>
-          <Link to="/">Contact</Link>
-          <Link to="/">NotFound</Link>
-
-          {this.props.children}
-        </div>
+        <footer className="footer">
+          <img src={logo} className="kensho-logo" alt="logo" />
+          <ul className="link-container">
+            <li className="link">About</li>
+            <li className="link">Services</li>
+            <li className="link">Contact</li>
+          </ul>
+        </footer>
       </div>
     )
   }
 
 }
 
-// {/* <footer>
-//   <img src={logo} className="kensho-logo" alt="logo" />
-// </footer> */}
 
 // export default App
 

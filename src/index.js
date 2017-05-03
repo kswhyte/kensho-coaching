@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { browserHistory } from 'react-router'
+// import { browserHistory } from 'react-router'
 
-// import App from './App'
+import App from './App'
 
-import Routes from './routes'
+// import Routes from './routes'
 import './reset.css'
 import './index.css'
 
@@ -20,6 +20,7 @@ import './index.css'
 // </Router> */}
 
 ReactDOM.render(
-  <Routes history={ browserHistory } />,
+  // <Routes history={ browserHistory } />,
+  <App />,
   document.getElementById('root')
 )

@@ -30,6 +30,14 @@ export default class About extends Component {
           Kensho can be seen as an initial or opening experience or meditative state consisting of no themes or stories that fog or cast a veil over this union of Self with true nature or essences.
         </p>
 
+        <section>
+          <h6 className="tagline-two">Kensho Coaching is Transformational Coaching</h6>
+          <em>Kensho</em> is a Japanese term from the Zen trandition meaning "seeing one's true nature; perceiving the Self"
+
+          <em>ken</em>seeing
+          <em>sho</em>nature, essence
+        </section>
+
         <p className="app-intro">
           <em>Kensho</em> is a Japanese term from the Zen trandition meaning "seeing one's true nature; perceiving the Self"
 
