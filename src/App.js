@@ -1,26 +1,51 @@
-import React, { Component } from 'react';
-import logo from '../public/Zen-Bamboo-Staff-white.png';
-import './App.css';
+import React, { Component } from 'react'
+// import logo from '../public/Zen-Bamboo-Staff-white.png'
+import './App.css'
+import { Link } from 'react-router'
 
-class App extends Component {
+// import ReactDOM from 'react-dom'
+// import { Router, Route, hashHistory } from 'react-router'
+// import { BrowserRouter, Match } from 'react-router'
 
+
+export default class App extends Component {
+
+  // <a href="mailto:matthew.leo.kaufman@gmail.com?Subject=Hi+Matt" target="_blank"><img src="./lib/imgs/icons/mail.svg" alt="mail" /></a>
+  // <Link to="/learnmore">Learn More</Link>
+
+//   <BrowserRouter>
+//     <div className="app">
+//       <Match exactly pattern='/' component={Landing} />
+//     </div>
+//   </BrowserRouter>
+// ) 
 
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Kensho Coaching</h2>
-        </div>
+      <div>
+        <p className="app-intro">
+          <em>Kensho</em> is a Japanese term from the Zen trandition meaning "seeing one's true nature; perceiving the Self"
 
-        <p className="App-intro">
-          <em>Kensho</em> means seeing one's true nature; perceiving the self.
-          The kensho experience is a pure realization of shunyata without duality of "seer" and "the thing seen."
-          Kensho is often spoken of as an initial or opening experience of enlightenment that requires further realization and deepening.
+          <em>ken</em>seeing
+          <em>sho</em>nature, essence
         </p>
+        <div>
+          <Link to="/">Home</Link>
+          <Link to="/">Contact</Link>
+          <Link to="/">NotFound</Link>
+
+          {this.props.children}
+        </div>
       </div>
-    );
+    )
   }
+
 }
 
-export default App;
+// {/* <footer>
+//   <img src={logo} className="kensho-logo" alt="logo" />
+// </footer> */}
+
+// export default App
+
+// ReactDOM.render(<App />, document.getElementById('root'))

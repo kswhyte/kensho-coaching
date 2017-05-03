@@ -1,31 +1,56 @@
-/*font-family: 'Exo 2', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Tenali Ramakrishna', sans-serif;
-font-family: 'Original Surfer', cursive;
-font-family: 'Trochut', cursive;
-font-family: 'Griffy', cursive;*/
+/*font-family: 'Exo 2', sans-serif;*/
 
-.App {
+.app {
   text-align: center;
+  background-color: black;
 }
 
-.App-logo {
+img.kensho-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 40px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+.title {
+  font-size: 60px;
+  font-family: 'Exo 2', sans-serif;
+  /*font-family: 'Oswald', sans-serif;*/
+  /*font-family: 'Tenali Ramakrishna', sans-serif;*/
+  /*font-family: 'Original Surfer', cursive;*/
+  /*font-family: 'Trochut', cursive;*/
+  /*font-family: 'Griffy', cursive;*/
+}
+
+.tagline {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.hero {
+  background: url('../public/patagonia-background-cropped.jpg') no-repeat fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 100vh;
+  /*width: 100vh;*/
+  /*padding: 100px 50px 260px 20px;*/
+  color: white;
+}
+
+.footer {
+  /*background-color: #222;*/
+  background: linear-gradient(to bottom, black, #000000);
+  height: 100px;
   padding: 20px;
   color: white;
 }
 
-.App-intro {
+.app-intro {
   font-size: large;
 }
 
-@keyframes App-logo-spin {
+/*@keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+}*/
